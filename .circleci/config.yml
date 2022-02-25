@@ -349,3 +349,5 @@ workflows:
           name: "Destroy On Demand Runner"
           context: aws-creds
           resource_class: << pipeline.id >> 
+          requires:
+            - "Running job on On Demand Runner!"
